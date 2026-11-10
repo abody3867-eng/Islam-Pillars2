@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أركان الإسلام</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --color-primary: #176b55;
+            --color-primary-dark: #10513f;
+            --color-background: #f4f7f3;
+            --color-surface: #ffffff;
+            --color-text: #26332e;
+            --color-muted: #61716a;
+            --shadow: 0 8px 24px rgba(25, 61, 47, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 32px 16px;
+            background: var(--color-background);
+            color: var(--color-text);
+            font-family: Tahoma, Arial, sans-serif;
+            line-height: 1.8;
+        }
+
+        .page {
+            width: min(100%, 1000px);
+            margin-inline: auto;
+        }
+
+        .page-header {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            margin: 0 0 8px;
+            color: var(--color-primary-dark);
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+
+        .credit {
+            margin: 0;
+            color: var(--color-muted);
+            font-style: italic;
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: 20px;
+        }
+
+        .pillar {
+            overflow: hidden;
+            border-radius: 16px;
+            background: var(--color-surface);
+            box-shadow: var(--shadow);
+        }
+
+        .pillar img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .pillar-content {
+            padding: 20px;
+        }
+
+        .pillar h2 {
+            margin: 0 0 12px;
+            color: var(--color-primary);
+            font-size: 1.5rem;
+        }
+
+        .pillar p {
+            margin: 0;
+            color: var(--color-muted);
+        }
+
+        .pillar p + p {
+            margin-top: 12px;
+        }
+
+        .toggle-button {
+            margin-top: 16px;
+            padding: 9px 16px;
+            border: 0;
+            border-radius: 8px;
+            background: var(--color-primary);
+            color: #ffffff;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .toggle-button:hover {
+            background: var(--color-primary-dark);
+        }
+
+        .toggle-button:focus-visible {
+            outline: 3px solid #e0a52b;
+            outline-offset: 3px;
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 24px 12px;
+            }
+
+            .pillar img {
+                height: 190px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <h1>أركان الإسلام</h1>
+            <p class="credit">من صنع عبدالهادي سليم الله</p>
+        </header>
+
+        <section class="pillars" aria-label="أركان الإسلام الخمسة">
+            <article class="pillar">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTglnx_P6_x6txGMhfhiXmZcTGyrik19HRU2HHc9-LZqQ&amp;s=10"
+                    alt="الشهادة"
+                    loading="lazy">
+                <div class="pillar-content">
+                    <h2>١. الشهادة</h2>
+                    <div class="description">
+                        <p>قول: «أشهد أن لا إله إلا الله، وأشهد أن محمدًا عبده ورسوله».</p>
+                    </div>
+                    <button class="toggle-button" type="button" aria-expanded="true">
+                        إخفاء التفاصيل
+                    </button>
+                </div>
+            </article>
+
+            <article class="pillar">
+                <img
+                    src="https://i.pinimg.com/736x/7f/3f/c0/7f3fc050539adc1f826aa85098f65f54.jpg"
+                    alt="الصلاة"
+                    loading="lazy">
+                <div class="pillar-content">
+                    <h2>٢. الصلاة</h2>
+                    <div class="description">
+                        <p>هي أقوال وأفعال مخصوصة، تبدأ بالتكبير وتختم بالتسليم، بشرائط وشروط وواجبات وأركان معلومة.</p>
+                    </div>
+                    <button class="toggle-button" type="button" aria-expanded="true">
+                        إخفاء التفاصيل
+                    </button>
+                </div>
+            </article>
+
+            <article class="pillar">
+                <img
+                    src="https://i.pinimg.com/1200x/3e/4d/17/3e4d17be4973d65f6412c12d3a9a5721.jpg"
+                    alt="الزكاة"
+                    loading="lazy">
+                <div class="pillar-content">
+                    <h2>٣. الزكاة</h2>
+                    <div class="description">
+                        <p>تعني النماء والزيادة والطهارة، وشرعًا هي جزء معلوم من المال يخرجه المسلم لمستحقيه المحددين في الشرع.</p>
+                        <p>تُصرف للفئات الثمانية المذكورة في القرآن الكريم: الفقراء، والمساكين، والعاملين عليها، والمؤلفة قلوبهم، وفي الرقاب، والغارمين، وفي سبيل الله، وابن السبيل.</p>
+                    </div>
+                    <button class="toggle-button" type="button" aria-expanded="true">
+                        إخفاء التفاصيل
+                    </button>
+                </div>
+            </article>
+
+            <article class="pillar">
+                <img
+                    src="https://i.pinimg.com/736x/9b/a5/64/9ba564b9a428f1f76d152070928d5a7c.jpg"
+                    alt="صوم رمضان"
+                    loading="lazy">
+                <div class="pillar-content">
+                    <h2>٤. صوم رمضان</h2>
+                    <div class="description">
+                        <p>هو التعبد لله بالإمساك عن الأكل والشرب وسائر المفطرات من طلوع الفجر الصادق حتى غروب الشمس مع النية.</p>
+                    </div>
+                    <button class="toggle-button" type="button" aria-expanded="true">
+                        إخفاء التفاصيل
+                    </button>
+                </div>
+            </article>
+
+            <article class="pillar">
+                <img
+                    src="https://i.pinimg.com/1200x/ae/3a/f0/ae3af0be3b7c55286a5a15dd0c53d781.jpg"
+                    alt="الحج إلى بيت الله الحرام"
+                    loading="lazy">
+                <div class="pillar-content">
+                    <h2>٥. حج بيت الله الحرام</h2>
+                    <div class="description">
+                        <p>المكان: يُؤدى في مكة المكرمة والمشاعر المقدسة (منى، وعرفات، ومزدلفة) في المملكة العربية السعودية.</p>
+                        <p>الوقت: يُؤدى في شهر ذي الحجة من كل عام، وتبدأ المناسك الفعلية من اليوم الثامن من ذي الحجة (يوم التروية) حتى الثالث عشر منه.</p>
+                    </div>
+                    <button class="toggle-button" type="button" aria-expanded="true">
+                        إخفاء التفاصيل
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll(".pillar").forEach((pillar) => {
+            const button = pillar.querySelector(".toggle-button");
+            const description = pillar.querySelector(".description");
+
+            button.addEventListener("click", () => {
+                const isExpanded = button.getAttribute("aria-expanded") === "true";
+                button.setAttribute("aria-expanded", String(!isExpanded));
+                description.hidden = isExpanded;
+                button.textContent = isExpanded ? "إظهار التفاصيل" : "إخفاء التفاصيل";
+            });
+        });
+    </script>
+</body>
+</html>
